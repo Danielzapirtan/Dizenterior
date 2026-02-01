@@ -1,34 +1,33 @@
 {
 "room_description": {
-"$id": "room_20260102_001",
+"$id": "room_20260201_001",
 "name": "Bedroom 001",
 "description": "User's bedroom",
 "shape": "rectangular",
 "dimensions": [ "3.2", "3.1", "2.2" ],
-"style": "Romanian mid-century",
+"style": "Romanian Year-2025-Style",
 "theme": "light cream",
-"requirement": "there should be enough furniture in the room",
-"items": {
+"items": [
 {
 "type": "Door",
-"align": "west-southwest"
+"position": "west-southwest"
 },
 {
 "type": "Bookcase",
-"align": "west-northwest",
+"position": "west-northwest",
 "style": "elegant"
 },
 {
 "type": "Wardrobe",
-"align": "north"
+"position": "north"
 },
 {
 "type": "Bed",
-"align": "north-northeast, towards room"
+"position": "north-northeast, towards room"
 },
 {
 "type": "Classical Window",
-"align": "east",
+"position": "east",
 "width": "1.0",
 "height": "0.9",
 "accessories": "curtain"
@@ -36,14 +35,14 @@
 {
 "type": "Desk",
 "type": "Chair",
-"align": "south-southeast"
+"position": "south-southeast"
 },
 {
 "type": "Nightstand",
-"align": "south"
+"position": "south"
 }
-}
+]
 },
 "role": "image generator",
-"task": "generate a 400 degrees cylindric panorama of $ref{room_20260102_001}"
+"task": "generate a 400 degrees cylindric panorama of $ref{room_20260201_001}"
 }
