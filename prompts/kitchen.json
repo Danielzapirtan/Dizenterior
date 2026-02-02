@@ -1,0 +1,31 @@
+{
+"room_description": {
+"$id": "kitchen_20260201_004",
+"name": "Kitchen",
+"description": "User's kitchen",
+"shape": "rectangular",
+"dimensions": [ "6.0", "4.0", "2.2" ],
+"style": "Romanian Year-2025-Style",
+"theme": "light cream",
+"items": [
+{
+"type": "Door",
+"position": "west-southwest"
+},
+{
+"type": "Classical Window",
+"position": "east",
+"width": "1.0",
+"height": "0.9",
+"accessories": "curtain"
+},
+{
+"type": "Usual Romanian Year-2025-Style kitchen furniture",
+"position": "creative",
+"count": "creative"
+}
+]
+},
+"role": "image generator",
+"task": "generate a 400 degrees cylindric panorama of $ref{kitchen_20260202_004}"
+}
