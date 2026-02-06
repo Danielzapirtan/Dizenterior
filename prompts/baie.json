@@ -1,0 +1,24 @@
+{
+"room_description": {
+"$id": "bathroom_20260206_004",
+"name": "Bathroom",
+"description": "User's bathroom",
+"shape": "rectangular",
+"dimensions": [ "3.0", "2.0", "2.2" ],
+"style": "Romanian Year-2025-Style",
+"theme": "light cream",
+"items": [
+{
+"type": "Door",
+"position": "west-southwest"
+},
+{
+"type": "Usual Romanian Year-2025-Style bathroom furniture",
+"position": "creative",
+"count": "creative"
+}
+]
+},
+"role": "image generator",
+"task": "generate a 400 degrees cylindric panorama of $ref{bathroom_20260206_004}"
+}
