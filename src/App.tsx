@@ -154,13 +154,13 @@ export default function App() {
         return `${template?.name} de culoare ${template?.color}`;
       }).join(", ");
 
-      const prompt = `O imagine realistă de tip unghi larg a unui interior de cameră modernă. 
-      Camera are dimensiunile de ${roomDimensions.width}x${roomDimensions.height} cm. 
+      const prompt = `O imagine panoramică a unui interior de cameră modernă. 
+      Dimensiuni: ${roomDimensions.width}x${roomDimensions.height} cm. 
       Mobilierul include: ${furnitureDescription}. 
       Stil: românesc anul 2025, temă crem deschis, iluminare fotorealistă, randare 8k, perspectivă largă.`;
 
       const response = await ai.models.generateContent({
-        model: 'gemini-2.5-flash-image',
+        model: 'gemini-3.1-flash-image-preview',
         contents: [{ parts: [{ text: prompt }] }],
         config: {
           imageConfig: {
