@@ -160,7 +160,7 @@ export default function App() {
       Stil: românesc anul 2025, temă crem deschis, iluminare fotorealistă, randare 8k, perspectivă largă.`;
 
       const response = await ai.models.generateContent({
-        model: 'gemini-1.5-flash-image',
+        model: 'gemini-2.5-flash-image',
         contents: [{ parts: [{ text: prompt }] }],
         config: {
           imageConfig: {
