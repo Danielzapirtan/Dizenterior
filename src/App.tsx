@@ -147,7 +147,7 @@ export default function App() {
       setIsGenerating(true);
       const { GoogleGenAI } = await import("@google/genai");
       // Folosim cheia API gratuită din mediu
-      const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+      const ai = new GoogleGenAI(process.env.GEMINI_API_KEY);
 
       const furnitureDescription = placedFurniture.map(f => {
         const template = FURNITURE_LIBRARY.find(t => t.id === f.templateId);
@@ -157,7 +157,7 @@ export default function App() {
       const prompt = `O imagine realistă de tip unghi larg a unui interior de cameră modernă. 
       Camera are dimensiunile de ${roomDimensions.width}x${roomDimensions.height} cm. 
       Mobilierul include: ${furnitureDescription}. 
-      Stil: design interior de lux, iluminare fotorealistă, randare 8k, perspectivă largă.`;
+      Stil: românesc anul 2025, temă crem deschis, randare 8k, perspectivă largă.`;
 
       const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash-image',
