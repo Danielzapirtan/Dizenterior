@@ -157,7 +157,7 @@ export default function App() {
       const prompt = `O imagine realistă de tip unghi larg a unui interior de cameră modernă. 
       Camera are dimensiunile de ${roomDimensions.width}x${roomDimensions.height} cm. 
       Mobilierul include: ${furnitureDescription}. 
-      Stil: design interior de lux, iluminare fotorealistă, randare 8k, perspectivă largă.`;
+      Stil: românesc anul 2025, temă crem deschis, iluminare fotorealistă, randare 8k, perspectivă largă.`;
 
       const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash-image',
@@ -180,6 +180,7 @@ export default function App() {
     } catch (error) {
       console.error("Eroare la generarea imaginii AI:", error);
       alert("A apărut o eroare la generarea imaginii AI. Te rugăm să încerci din nou.");
+      alert(error);
     } finally {
       setIsGenerating(false);
     }
