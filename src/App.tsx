@@ -157,7 +157,7 @@ export default function App() {
       const prompt = `O imagine panoramică a unui interior de cameră modernă. 
       Dimensiuni: ${roomDimensions.width}x${roomDimensions.height} cm. 
       Mobilierul include: ${furnitureDescription}. 
-      Stil: românesc anul 2025, temă crem deschis, iluminare fotorealistă, randare 8k, perspectivă largă.`;
+      Stil: românesc anul 2025, temă crem deschis.`;
       alert(prompt);
       const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash-image',
