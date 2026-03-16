@@ -147,7 +147,7 @@ export default function App() {
       setIsGenerating(true);
       const { GoogleGenAI } = await import("@google/genai");
       // Folosim cheia API gratuită din mediu
-      const ai = new GoogleGenAI({ apiKey: (process.env as any).GEMINI_API_KEY });
+      const ai = new GoogleGenAI({ apiKey: (process.env as any).VITE_GEMINI_API_KEY });
 
       const furnitureDescription = placedFurniture.map(f => {
         const template = FURNITURE_LIBRARY.find(t => t.id === f.templateId);
