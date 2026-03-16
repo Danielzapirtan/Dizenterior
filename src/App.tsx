@@ -158,7 +158,7 @@ export default function App() {
       Dimensiuni: ${roomDimensions.width}x${roomDimensions.height} cm. 
       Mobilierul include: ${furnitureDescription}. 
       Stil: românesc anul 2025, temă crem deschis.`;
-      prompt = `Test API. Generează o imagine de test.`; 
+      const prompt = `Test API. Generează o imagine de test.`; 
       alert(prompt);
       const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash-image',
